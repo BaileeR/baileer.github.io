@@ -1,0 +1,177 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Declare the base font-family - from google font api or other */
+
+body {
+    font-size: 1em;
+
+}
+
+/* the comma means apply the following CSS declarations to all of the listed elements */
+
+/* Declare the maximum width and other main element rules to limit the stretch on wide views */
+
+header,
+nav,
+main,
+footer {
+    display: block;
+}
+
+header {
+    display: block;
+    padding: 0px, 0px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 3em;
+    margin: 0px;
+    background-color: #c7a82c;
+    color: #272391;
+}
+
+header img {}
+
+header .subheading {
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #272391;
+    color: white;
+}
+
+/* Change the link color to #111 (black) on hover */
+
+nav {
+    margin-top: 1em;
+    padding: 1em;
+    display: none;
+}
+
+nav button {
+    position: absolute;
+    top: 12em;
+    right: 1em;
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 50;
+    padding: 1em 0;
+    overflow: hidden;
+    background-color: #272391;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #c7a82c;
+}
+
+.active {
+    background-color: #c7a82c;
+}
+
+nav ul li {
+    border-right: 1px solid #bbb;
+}
+
+main {
+    text-align: center;
+}
+
+main figure {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+}
+
+main h2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+main figure img {
+    width: 100%;
+}
+
+section {
+    text-align: center;
+}
+
+section.forecast {
+    display: none;
+
+}
+
+/* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+
+.current picture {
+    display: block;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+
+
+article p.town-article img {
+    /* fill the page in the small/phone view */
+    width: 25%;
+
+    margin: auto;
+}
+
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+article {
+    border: 1px solid #000;
+    padding: 1em;
+}
+
+article h3 {
+    text-align: center;
+}
+
+article img {
+    width: 100%;
+    margin: 0;
+}
+
+
+footer {
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 1.1em
+}
+
+footer aside {
+    background: #272391;
+}
+
+footer > p {
+    background: #c7a82c;
+    margin: 0;
+
+}
