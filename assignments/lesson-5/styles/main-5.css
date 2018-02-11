@@ -11,7 +11,6 @@
 
 body {
     font-size: 1em;
-
 }
 
 /* the comma means apply the following CSS declarations to all of the listed elements */
@@ -27,7 +26,8 @@ footer {
 
 header {
     display: block;
-    padding: 0px, 0px;
+    padding: 0px 0px;
+    background-color: #272391;
 }
 
 header h1 {
@@ -38,11 +38,6 @@ header h1 {
     color: #272391;
 }
 
-header img {
-    display: block;
-    
-}
-
 header .subheading {
     text-align: center;
     font-size: 1.5em;
@@ -50,7 +45,6 @@ header .subheading {
     color: white;
 }
 
-/* Change the link color to #111 (black) on hover */
 
 nav {
     margin-top: 1em;
@@ -67,8 +61,8 @@ nav button {
 
 nav ul {
     list-style-type: none;
-    margin: 50;
-    padding: 1em 0;
+    margin: 20px;
+    padding: 1em 1em;
     overflow: hidden;
     background-color: #272391;
 }
@@ -109,7 +103,6 @@ main figure {
 main h2 {
     text-align: center;
     margin-top: 10px;
-    display: 
 }
 
 main figure img {
@@ -149,12 +142,13 @@ article p.town-article img {
 /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
-article  {
+
+article {
     width: 100%;
     border: 1px solid #000;
     padding: 1em;
-    margin: 1em; 
-    float: left; 
+    margin: 1em;
+    float: left;
     background-color: white;
 }
 
@@ -174,7 +168,7 @@ footer {
     padding-top: 10px;
     text-align: center;
     color: white;
-    font-size: 1.1em
+    font-size: 1.1em;
 }
 
 footer aside {
