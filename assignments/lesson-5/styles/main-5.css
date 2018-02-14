@@ -46,12 +46,6 @@ header .subheading {
 }
 
 
-nav {
-    margin-top: 1em;
-    padding: 1em;
-    display: none;
-}
-
 nav button {
     position: absolute;
     top: 12em;
@@ -60,6 +54,8 @@ nav button {
 }
 
 nav ul {
+    margin-top: 1em;
+    padding: 1em;
     list-style-type: none;
     margin: 20px;
     padding: 1em 1em;
