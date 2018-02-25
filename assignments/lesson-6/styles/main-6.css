@@ -53,40 +53,6 @@ nav button {
     display: block;
 }
 
-/*nav ul {
-    margin-top: 1em;
-    padding: 1em;
-    list-style-type: none;
-    margin: 20px;
-    padding: 1em 1em;
-    overflow: hidden;
-    background-color: #272391;
-}
-
-nav ul li {
-    float: left;
-}
-
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 30px;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    background-color: #c7a82c;
-}
-
-.active {
-    background-color: #c7a82c;
-}
-
-nav ul li {
-    border-right: 1px solid #bbb;
-}*/
-
 main {
     text-align: center;
 }
@@ -130,7 +96,6 @@ p {
 article p.town-article img {
     /* fill the page in the small/phone view */
     width: 25%;
-
     margin: auto;
 }
 
