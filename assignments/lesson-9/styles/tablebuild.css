@@ -1,0 +1,69 @@
+/*applies to all*/
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    border: 1px solid #d1d3d2;
+}
+
+/*gives the table a shadow*/
+table {
+    box-shadow: 7px 7px 14px #628ca6;
+}
+
+/*color for header and footer- problem w/ bold*/
+
+#tableHeader {
+    background-color: #7fb9c2;
+    font-size: 1.5em;
+    font-weight: 1000; 
+}
+
+#tableFooter {
+    background-color: #7fb9c2;
+    font-size: .7em;
+}
+
+/*colors the even and odd rows*/
+
+#data_even_odd tr:nth-child(even) {
+    background-color: #e7ffed;
+}
+
+#data_even_odd tr:nth-child(odd) {
+    background-color: #e7f0ed;
+}
+
+/*applies to columns and rows*/
+
+th,
+td {
+    padding: 6px;
+}
+
+td {
+    text-align: center;
+}
+
+thead tr:last-child {
+    font-weight: bold;
+}
+
+/*covers the 4 weird blue boxes */
+
+.outlier {
+    background-color: #628ca6;
+    color: white;
+    font-weight: 1000; 
+}
+
+/*italicizes black friday */
+
+#italic {
+    font-style: italic;
+}

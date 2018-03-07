@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Storm Center | Weathered</title>
+    <meta name="author" content="Bailee Robertson">
+    <meta name="description" content="Weather Forecast for Franklin City">
+    <!-- external style references in the proper cascading order -->
+    <!-- Google API font reference -->
+    <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/main-8.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/medium-8.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+    <link href="styles/large-8.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="header_pics">
+        <div><img src="images/weathered.jpg" alt="The site Title" height="100"></div>
+        <div><img src="images/weatheredlogo.jpg" alt="The site logo" height="100"></div>
+        <h1 id="subheading">Weather That Isn't Old News</h1>
+    </header>
+
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="">Home</a>
+            <a href="franklin-8.html">Franklin</a>
+            <a href="#">Greenville</a>
+            <a href="#">Springfield</a>
+            <a href="#home" class="active">Storm Center</a>
+            <a href="gallery-8.html">Gallery</a>
+            <button class="icon" onclick="toggleNavMenu()">&#9776;</button>
+        </div>
+    </nav>
+
+    <main>
+        <h2>Storm Center</h2>
+        <form action="thanks.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div>
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" name="fullName" id="fullName" pattern="[A-Za-z\s]+[A-Za-z]{5,}" required autofocus>
+                </div>
+                <div>    
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="example@email.com" required>
+                </div>
+                <div>
+                    <label for="telephone">Phone Number:</label>
+                    <input type="tel" name="telephone" id="telephone" required>
+                </div>
+                <div>
+                    <label for="zipCode">Zip Code:</label>
+                    <input type="number" name="zipCode" id="zipCode" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
+                <div>
+                    <label for="stormDate">Storm Date:</label>
+                    <input type="date" name="stormDate" id="stormDate">
+                </div>
+                <div>
+                    <label for="stormType">Storm Type:</label>
+                    <input type="list" name="stormType" id="stormType" value list="storms">
+                    <datalist id="storms">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </div>
+                <div>
+                    <label for="stormSeverity">Storm Severity:</label>
+                    <input type="range" name="stormSeverity" id="stormSeverity" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="severityValue">5</span>
+                </div>
+                <div>
+                    <label for="stormRegion">Storm Region:</label>
+                    <input name="stormRegion" id="stormRegion" value list="regions">
+                    <datalist id="regions">
+                        <option value="Select" selected disabled>Select The Region</option>
+                        <option value="Franklin">Franklin</option>
+                        <option value="Greenville">Greenville</option>
+                        <option value="Springfield">Springfield</option>
+                    </datalist>
+                    <div>
+                        <label for="dangerLevel">Are you In Danger?</label><br>
+                        <input type="radio" name="dangerLevel" id="dangerLevel" value="yes" checked> Yes <br>
+                        <input type="radio" name="dangerLevel" id="dangerLevel" value="no"> No <br>
+                        <input type="radio" name="dangerLevel" id="dangerLevel" value="maybe"> Maybe
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Other Relevant Information</legend>
+                <textarea name="moreInfo" rows="10" cols="30"></textarea>
+            </fieldset>
+            <input type="submit" name="submit" id="submitButton">
+        </form>
+    </main>
+
+    <footer>
+        <aside>
+            Contact Us<br>(123)-123-1234<br>3 Kirby Street<br>West Lafayette, Indiana
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | Weathered | <span id="currentdate"></span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/severityslider.js"></script>
+
+</body>
+
+</html>
