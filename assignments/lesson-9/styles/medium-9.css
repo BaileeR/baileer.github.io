@@ -55,12 +55,19 @@
 
     /*-------THE GALLERY PAGE--------*/
     .gallery_grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
 
     .forecast {
         display: block;
+    }
+
+
+    /*------Index Page-------*/
+    #townStats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }

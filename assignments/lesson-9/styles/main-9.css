@@ -216,6 +216,68 @@ fieldset {
     border-color: #c7a82c;
 }
 
-#submitButton {
-    
+/*------The Home Page-------*/
+
+#picStory {
+    display: flex; 
+    margin: 10px;
+}
+
+#picStory img {
+    width: 250; 
+}
+
+#mainStory {
+    display:flex; 
+    flex-direction: column; 
+    border: 2px solid #272391; 
+    text-align: center;
+}
+
+#townStats {
+    display: grid; 
+    grid-template-columns: 1fr; 
+}
+
+#franklinWhole {
+    display: flex;
+    margin: 20px
+}
+
+#franklinWhole img {
+    width: 150px;
+    height: 200px
+}
+
+#franklinStats {
+    border: 2px solid #c7a82c;
+    flex-direction: column; 
+}
+
+#greenvilleWhole {
+    display: flex;
+    margin: 20px
+}
+
+#greenvilleWhole img {
+    width: 150px; 
+}
+
+#greenvilleStats {
+    border: 2px solid #c7a82c;
+    flex-direction: column; 
+}
+
+#springfieldWhole {
+    display: flex;
+    margin: 20px
+}
+
+#springfieldWhole img {
+    width: 150px; 
+}
+
+#springfieldStats {
+    border: 2px solid #c7a82c;
+    flex-direction: column; 
 }
