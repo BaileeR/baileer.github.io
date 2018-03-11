@@ -1,7 +1,7 @@
 @media only screen and (min-width: 64em) {
 
     /*-------THE GALLERY PAGE--------*/
-    .glow:hover {
+    .grid-item:hover {
         box-shadow: 5px 5px 10px #272391;
     }
 
