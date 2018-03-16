@@ -1,4 +1,4 @@
-var requestURL = 'http://api.wunderground.com/api/fee4c8f4d1d2d888/forecast/conditions/q/MN/Greenville.json';
+var requestURL = 'https://api.wunderground.com/api/fee4c8f4d1d2d888/forecast/conditions/q/MN/Greenville.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
