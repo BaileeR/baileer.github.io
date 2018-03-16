@@ -20,9 +20,9 @@ document.getElementById("currentTemp").innerHTML=springfieldData;
 var springfieldData = jsonObj.current_observation.wind_mph;
 document.getElementById("windSpeed").innerHTML=springfieldData;
 
-var springfieldData = jsonObj.forecast.
+var springfieldData = jsonObj.forecast.txt_forecast.forecastday[0].fcttext;
 document.getElementById("forecastString").src=springfieldData;
         
-var springfieldData = jsonObj.current_observation.icon_url;
+var springfieldData = jsonObj.forecast.txt_forecast.forecastday[0].icon_url;
 document.getElementById("forecastImg").src=springfieldData;
 }
