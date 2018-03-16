@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin | Weathered</title>
+    <meta name="author" content="Bailee Robertson">
+    <meta name="description" content="Weather Forecast for Franklin City">
+    <!-- external style references in the proper cascading order -->
+    <!-- Google API font reference -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="header_pics">
+            <div><img src="images/weathered.jpg" alt="The site Title" height="100"></div>
+            <div><img src="images/newlogofixed.png" alt="The site logo" height="100"></div>
+        </div>
+        <div>
+            <h1 id="subheading">Weather That Isn't Old News</h1>
+        </div>
+    </header>
+
+    <nav id="mainmenu">
+        <div class="topnav" id="myTopnav">
+            <a href="Home" class="active">Home</a>
+            <a href="franklin.html">Franklin</a>
+            <a href="greenville.html">Greenville</a>
+            <a href="springfield.html">Springfield</a>
+            <a href="stormcenter.html">Storm Center</a>
+            <a href="gallery.html">Gallery</a>
+            <button class="icon" onclick="toggleNavMenu()">&#9776;</button>
+        </div>
+    </nav>
+
+    <main>
+        <div id="picStory">
+            <div id="mainStory">
+                <h3 class="story">House Gets Set on Fire Because Lightning</h3>
+                <p class="story">Quisque pulvinar quam sed nulla vehicula, non rhoncus leo egestas. Cras imperdiet dolor quis libero posuere porttitor. Proin iaculis mattis tellus, vel accumsan dolor. Vestibulum id dui eu diam volutpat suscipit id eu ipsum. Sed dapibus imperdiet lacus sit amet convallis. Integer in tortor at dolor maximus vestibulum eget vel tortor.</p>
+            </div>
+        </div>
+        <div id="townStats">
+            <div id="franklinWhole">
+                <div class="data1">
+                   <img src="images/townimage1fixed.jpg" alt="Town of Franklin" width="250">
+                    <h3 id="frankStat">Franklin</h3>
+                </div>
+            </div>
+            <div id="greenvilleWhole">
+                <div class="data2">
+                    <img src="images/townimage2fixed.jpg" alt="Town of Greenville" width="250">
+                    <div id="greenvilleStats">
+                        <h3 id="greenStat">Greenville</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="springfieldWhole">
+                <div class="data4">
+                    <img src="images/townimage3fixed.jpg" alt="Town of Springfield" width="250">
+                    <div id="springfieldStats">
+                        <h3 id="springStat">Springfield</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <aside>
+            Contact Us<br>(123)-123-1234<br>3 Kirby Street<br>West Lafayette, Indiana
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | Weathered | <span id="currentdate"></span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/townstats.js"></script>
+
+</body>
+
+</html>

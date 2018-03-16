@@ -1,0 +1,274 @@
+/* applies to everything */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    font-size: 1em;
+}
+
+/* the header */
+
+header {
+    padding: 0px 0px;
+    background-color: #272391;
+}
+
+header h1 {
+    font-size: 2.2em;
+    margin: 0px;
+    background-color: #c7a82c;
+    color: #272391;
+    padding: 10px;
+    line-height: 30px;
+}
+
+.header_pics {
+    display: flex;
+}
+
+/* the navigation bar */
+
+nav button {
+    position: absolute;
+    top: 12.7em;
+    right: 1em;
+    display: block;
+}
+
+.topnav {
+    display: flex;
+    flex-direction: column;
+    background-color: #c7a82c;
+    overflow: hidden;
+}
+
+
+.topnav a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.active {
+    background-color: #272391;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+/* move these to their respective views on medium and large */
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav button.icon {
+        display: block;
+        margin-top: -50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive button.icon {
+        position: absolute;
+        margin-top: -180px;
+    }
+    .topnav.responsive a {
+        display: block;
+        text-align: left;
+    }
+}
+
+/* city name heading */
+
+main h2 {
+    display: flex;
+    justify-content: center;
+}
+
+/* the weather summary */
+
+/* Come Back to This one */
+
+.stat_boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 3em;
+}
+
+.stat_boxes div {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* the forecast */
+
+.forecast {
+    display: none;
+}
+
+/* the article */
+
+article p {
+    font-family: sans-serif;
+}
+
+.article_box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* the footer */
+
+footer {
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
+}
+
+footer aside {
+    background: #272391;
+}
+
+footer > p {
+    background: #c7a82c;
+    margin: 0;
+
+}
+
+.town-article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+}
+
+.town-article img {
+    width: 50%;
+    height: 50%;
+    padding-right: 10px;
+}
+
+
+/*-------THE GALLERY PAGE--------*/
+
+.gallery_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 5px;
+}
+
+.grid-item {
+    border: 1px solid #272391;
+    padding: 10px;
+    text-align: center;
+    background-color: #9592db;
+}
+
+.gallery_grid p {
+    background-color: white;
+}
+
+.grid-item img {
+    width: 100%;
+}
+
+
+
+/*-----The Storm Center-----*/
+
+body {
+    line-height: 1.5em;
+}
+
+legend,
+fieldset {
+    color: #272391;
+    border-color: #c7a82c;
+}
+
+/*------The Home Page-------*/
+
+#picStory {
+    display: flex;
+    margin: 20px;
+}
+
+#mainStory {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #272391;
+    text-align: center;
+    padding: 20px; 
+}
+
+#mainStory img { 
+    width: 350px;
+}
+
+#townStats {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#franklinWhole {
+    display: flex; 
+    flex-direction: column; 
+    border: 2px solid #c7a82c; 
+    text-align: center; 
+    padding: 20px;
+    margin: 20px; 
+}
+
+#franklinWhole img { 
+    width: 308px 
+}
+
+#greenvilleWhole {
+    display: flex; 
+    flex-direction: column; 
+    border: 2px solid #c7a82c; 
+    text-align: center;
+    padding: 20px; 
+    margin: 20px; 
+}
+
+#greenvilleWhole div img { 
+    width: 308px; 
+}
+
+#springfieldWhole { 
+    display: flex; 
+    flex-direction: column; 
+    border: 2px solid #c7a82c; 
+    text-align: center; 
+    padding: 20px; 
+    margin: 20px;
+}
+
+#springfieldWhole div img { 
+    width: 308px; 
+}

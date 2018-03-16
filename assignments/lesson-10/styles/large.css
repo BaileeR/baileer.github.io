@@ -1,0 +1,18 @@
+@media only screen and (min-width: 64em) {
+
+    /*-------THE GALLERY PAGE--------*/
+    .grid-item:hover {
+        box-shadow: 5px 5px 10px #272391;
+    }
+
+    .gallery_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /*------The Index Page-------*/
+    #townStats {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

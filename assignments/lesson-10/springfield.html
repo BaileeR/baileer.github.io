@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin | Weathered</title>
+    <meta name="author" content="Bailee Robertson">
+    <meta name="description" content="Weather Forecast for Franklin City">
+    <!-- external style references in the proper cascading order -->
+    <!-- Google API font reference -->
+    <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+    <link href="styles/large.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header_pics">
+            <div><img src="images/weathered.jpg" alt="The site Title" height="100"></div>
+            <div><img src="images/newlogofixed.png" alt="The site logo" height="100"></div>
+        </div>
+        <div>
+            <h1 id="subheading">Weather That Isn't Old News</h1>
+        </div>
+    </header>
+
+    <nav id="mainmenu">
+        <div class="topnav" id="myTopnav" id="mainmenu">
+            <a href="index.html">Home</a>
+            <a href="#Home">Franklin</a>
+            <a href="greenville.html">Greenville</a>
+            <a href="springfield.html" class="active">Springfield</a>
+            <a href="stormcenter.html">Storm Center</a>
+            <a href="gallery.html">Gallery</a>
+            <button class="icon" onclick="toggleNavMenu()">&#9776;</button>
+        </div>
+    </nav>
+
+    <main>
+        <figure>
+            <img src="images/longer.jpg" alt="A Sunny Sky" width=100%>
+        </figure>
+        <h2>The City of Springfield</h2>
+        <figure>
+            <img src="images/franklin-medium.jpg" alt="Franklin" width:800 srcset="images/franklin-small.jpg 400w,
+                       images/franklin-medium.jpg 800w, 
+                       images/franklin-large.jpg 1200w">
+        </figure>
+        <h3>Weather Summary</h3>
+        <section class="stat_boxes">
+            <div class="conditions">
+                <p>Today's Weather:
+                    <span id="weatherString"></span>
+                </p>
+                <p>Current Temperature:
+                    <span id="currentTemp"></span>
+                </p>
+                <p>Wind Speed:
+                    <span id="windSpeed"></span>
+                </p>
+                <p>Today's Forecast:
+                    <span id="forecastString"></span>
+                    <img id="forecastImg" src="" alt="current weather">
+                </p>
+            </div>
+        </section>
+
+        <section id="forecast_box" class="forecast">
+            <div>
+                <h3>10 Day Forecast</h3>
+            </div>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <article class="article_box">
+            <div>
+                <h3>Springfield Breaks Record</h3>
+            </div>
+            <div>
+                <p class="town-article">
+                    <img src="images/newtown.jpeg" alt="Town" width="150"> <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit scelerisque nibh quis hendrerit. Nam malesuada finibus dapibus. Donec mattis porta accumsan. Donec euismod, nulla et euismod lacinia, dolor augue pretium lectus, sagittis imperdiet quam nisl eu massa. Vestibulum sed magna quam. Etiam dapibus libero id urna eleifend interdum. Proin sit amet tortor at ipsum tristique finibus rutrum sed nunc.</span>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <aside>
+            Contact Us<br>(123)-123-1234<br>3 Kirby Street<br>West Lafayette, Indiana
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | Weathered | <span id="currentdate"></span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/swu-weather.js"></script>
+
+</body>
+
+</html>

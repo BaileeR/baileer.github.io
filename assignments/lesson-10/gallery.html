@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weathered | Gallery</title>
+    <meta name="author" content="Bailee Robertson">
+    <meta name="description" content="Weather Gallery Pictures">
+    <!-- external style references in the proper cascading order -->
+    <!-- Google API font reference -->
+    <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+    <link href="styles/large.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header_pics">
+        <div><img src="images/weathered.jpg" alt="The site Title" height="100"></div>
+        <div><img src="images/newlogofixed.png" alt="The site logo" height="100"></div>
+        <h1 id="subheading">Weather That Isn't Old News</h1>
+    </header>
+    <nav id="mainmenu">
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="franklin.html">Franklin</a>
+            <a href="greenville.html">Greenville</a>
+            <a href="springfield.html">Springfield</a>
+            <a href="stormcenter.html">Storm Center</a>
+            <a href="#home" class="active">Gallery</a>
+            <button class="icon" onclick="toggleNavMenu()">&#9776;</button>
+        </div>
+    </nav>
+    <h2> Weathered Photo Gallery </h2>
+    <div class="gallery_grid">
+        <figure class="grid-item">
+            <img src="images/weather-fog-fixed.jpg" alt="Foggy Day">
+            <figcaption>
+                A Foggy Day
+            </figcaption>
+            <p>Aliquam consequat dignissim tellus sed maximus. Mauris mattis nulla massa, in auctor diam varius ut. Praesent scelerisque, dui vel porta ullamcorper, ligula sem condimentum enim, a euismod lacus dolor vel.</p>
+        </figure>
+
+        <figure class="grid-item">
+            <img class="glow" src="images/weather-lightning-fixed.jpg" alt="Lightning in the sky.">
+            <figcaption>
+               Lightning in the sky
+            </figcaption>
+            <p> In quis risus iaculis, laoreet lectus non, porttitor ipsum. Pellentesque id gravida lacus. Mauris at ex sit amet felis pharetra convallis sed quis odio. Maecenas ac est blandit, laoreet tellus.</p>
+        </figure>
+
+        <figure class="grid-item">
+            <img src="images/weather-ocean-fixed.jpg" alt="Weather on the ocean.">
+            <figcaption>
+              Weather on the Ocean
+            </figcaption>
+            <p>Nam rhoncus bibendum hendrerit. Duis mollis, lacus in efficitur lobortis, nunc est sodales ipsum, sed porttitor orci dui iaculis orci. Donec malesuada risus a ante ultrices, quis ornare quam sodales.</p>
+        </figure>
+
+        <figure class="grid-item">
+            <img src="images/weather-snow-fixed.jpg" alt="Snowy Day">
+            <figcaption>
+            Snowy Day 
+            </figcaption>
+            <p> Aenean blandit consectetur vehicula. Morbi porttitor, nisi vel vulputate rhoncus, purus augue suscipit sapien, sed auctor turpis ligula at lorem. Nulla volutpat euismod ligula, non tincidunt neque sollicitudin mattis. Nullam.</p>
+        </figure>
+
+        <figure class="grid-item">
+            <img src="images/weather-tornado-fixed.jpg" alt="A Big Tornado.">
+            <figcaption>
+                A Big Tornado
+            </figcaption>
+            <p>Donec luctus convallis nulla ac rhoncus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer placerat accumsan sapien, dictum dictum odio imperdiet bibendum. Cras ultricies ex.</p>
+        </figure>
+
+        <figure class="grid-item">
+            <img src="images/weather-rain-fixed.jpg" alt="A Rainy day">
+            <figcaption>
+            A Rainy Day
+            </figcaption>
+            <p>Curabitur urna magna, egestas id euismod ut, efficitur in ipsum. Ut rhoncus semper lorem. Donec dignissim auctor justo, vitae dignissim nunc rutrum sit amet. Nullam posuere ex quis velit porttitor.</p>
+        </figure>
+    </div>
+    <footer>
+        <aside>
+            Contact Us<br>(123)-123-1234<br>3 Kirby Street<br>West Lafayette, Indiana
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | Weathered | <span id="currentdate"></span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+</body>
+</html>

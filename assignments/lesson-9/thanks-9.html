@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Storm Center | Weathered</title>
+    <meta name="author" content="Bailee Robertson">
+    <meta name="description" content="Weather Forecast for Franklin City">
+    <!-- external style references in the proper cascading order -->
+    <!-- Google API font reference -->
+    <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/main-9.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/medium-9.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+    <link href="styles/large-9.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="header_pics">
+        <div><img src="images/weathered.jpg" alt="The site Title" height="100"></div>
+        <div><img src="images/weatheredlogo.jpg" alt="The site logo" height="100"></div>
+        <h1 id="subheading">Weather That Isn't Old News</h1>
+    </header>
+
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="#" class="active">Home</a>
+            <a href="franklin-8.html">Franklin</a>
+            <a href="#">Greenville</a>
+            <a href="#">Springfield</a>
+            <a href="stormcenter.html">Storm Center</a>
+            <a href="gallery-7.html">Gallery</a>
+            <button class="icon" onclick="toggleNavMenu()">&#9776;</button>
+        </div>
+    </nav>
+
+    <main>
+        <h3>Thanks for your help!</h3>
+        <p>Please use the above links to navigate back to the main page.<p>
+    </main>
+
+    <footer>
+        <aside>
+            Contact Us<br>(123)-123-1234<br>3 Kirby Street<br>West Lafayette, Indiana
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | Weathered | <span id="currentdate"></span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+
+</body>
+
+</html>
