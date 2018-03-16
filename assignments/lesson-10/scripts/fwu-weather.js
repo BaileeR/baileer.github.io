@@ -20,9 +20,9 @@ document.getElementById("currentTemp").innerHTML=franklinData;
 var fraklinData = jsonObj.current_observation.wind_mph;
 document.getElementById("windSpeed").innerHTML=franklinData;
 
-var franklinData = jsonObj.forecast.
+var franklinData = jsonObj.forecast.txt_forecast.forecastday[0].fcctext;
 document.getElementById("forecastString").src=franklinData;
         
-var franklinData = jsonObj.current_observation.icon_url;
+var franklinData = jsonObj.forecast.txt_forecast.forecastday[0].icon_url;
 document.getElementById("forecastImg").src=franklinData;
 }
