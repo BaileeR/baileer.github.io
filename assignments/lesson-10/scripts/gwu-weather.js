@@ -1,4 +1,4 @@
-var requestURL = 'https://api.wunderground.com/api/fee4c8f4d1d2d888/forecast/conditions/q/UT/Greenville.json';
+var requestURL = 'https://api.wunderground.com/api/fee4c8f4d1d2d888/forecast/conditions/q/AL/Greenville.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -7,22 +7,22 @@ request.send();
 
 request.onload = function () {
     var greenvillenWeather = request.response;
-    createCityInformation(springfieldWeather);
+    createCityInformation(greenvilleWeather);
 }
 
 function createCityInformation(jsonObj) {
 var greenvilleData = jsonObj.current_observation.weather; 
-document.getElementById("weatherString").innerHTML=springfieldData;
+document.getElementById("weatherString").innerHTML=greenvilleData;
     
 var greenvilleData = jsonObj.current_observation.temperature_string;
-document.getElementById("currentTemp").innerHTML=springfieldData;
+document.getElementById("currentTemp").innerHTML=greenvilledData;
     
 var greenvilleData = jsonObj.current_observation.wind_mph;
-document.getElementById("windSpeed").innerHTML=springfieldData;
+document.getElementById("windSpeed").innerHTML=greenvilleData;
 
 var greenvilleData = jsonObj.forecast.txt_forecast.forecastday[0].fcttext;
-document.getElementById("forecastString").src=springfieldData;
+document.getElementById("forecastString").src=greenvilleData;
         
 var greenvilleData = jsonObj.forecast.txt_forecast.forecastday[0].icon_url;
-document.getElementById("forecastImg").src=springfieldData;
+document.getElementById("forecastImg").src=greenvilleData;
 }
