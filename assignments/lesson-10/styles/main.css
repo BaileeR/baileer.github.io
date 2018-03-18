@@ -29,12 +29,12 @@ header h1 {
     display: flex;
 }
 
-#weatheredName img {
-    max-width: 250px;
+#weatheredName {
+    width: 14em;
 }
 
-#weatheredLogo img {
-    max-height: 106px;
+#weatheredLogo {
+    width: 10em;
 }
 
 /* the navigation bar */
@@ -118,15 +118,19 @@ main h2 {
 /* the weather summary */
 
 #weatherSummaryText {
-    margin-left: 10%;
+    margin-left: 45%;
 }
 
 .stat_boxes {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-gap: 3em;
     margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    border: 2px solid #c7a82c;
+    padding: 15px
 }
 
 .stat_boxes div {
@@ -154,6 +158,10 @@ article p {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+.town-article img {
+    display: none; 
 }
 
 /* the footer */
@@ -199,14 +207,15 @@ footer > p {
 }
 
 .grid-item {
-    border: 1px solid #272391;
+    border: 1px solid white;
     padding: 10px;
     text-align: center;
-    background-color: #9592db;
+    color:white;
+    background-color: #272391;
 }
 
 .gallery_grid p {
-    background-color: white;
+    background-color: #272391;
 }
 
 .grid-item img {
@@ -216,10 +225,6 @@ footer > p {
 
 
 /*-----The Storm Center-----*/
-
-body {
-    line-height: 1.5em;
-}
 
 legend,
 fieldset {
