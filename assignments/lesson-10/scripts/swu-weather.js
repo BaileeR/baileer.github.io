@@ -21,7 +21,7 @@ var springfieldData = jsonObj.current_observation.wind_mph;
 document.getElementById("windSpeed").innerHTML=springfieldData;
 
 var springfieldData = jsonObj.forecast.txt_forecast.forecastday[0].fcttext;
-document.getElementById("forecastString").src=springfieldData;
+document.getElementById("forecastString").innerHTML=springfieldData;
         
 var springfieldData = jsonObj.forecast.txt_forecast.forecastday[0].icon_url;
 document.getElementById("forecastImg").src=springfieldData;

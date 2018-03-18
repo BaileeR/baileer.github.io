@@ -52,6 +52,17 @@
     .topnav .icon {
         display: none;
     }
+    
+     #forecastTable {
+        border-collapse: collapse; 
+        border: 3px solid #272391; 
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+    
+    #forecastTable thead,tbody {
+        padding: 10px
+    }
 
     /*-------THE GALLERY PAGE--------*/
     .gallery_grid {

@@ -6,7 +6,7 @@ request.send();
 
 
 request.onload = function () {
-    var greenvillenWeather = request.response;
+    var greenvilleWeather = request.response;
     createCityInformation(greenvilleWeather);
 }
 
@@ -15,13 +15,13 @@ var greenvilleData = jsonObj.current_observation.weather;
 document.getElementById("weatherString").innerHTML=greenvilleData;
     
 var greenvilleData = jsonObj.current_observation.temperature_string;
-document.getElementById("currentTemp").innerHTML=greenvilledData;
+document.getElementById("currentTemp").innerHTML=greenvilleData;
     
 var greenvilleData = jsonObj.current_observation.wind_mph;
 document.getElementById("windSpeed").innerHTML=greenvilleData;
 
 var greenvilleData = jsonObj.forecast.txt_forecast.forecastday[0].fcttext;
-document.getElementById("forecastString").src=greenvilleData;
+document.getElementById("forecastString").innerHTML=greenvilleData;
         
 var greenvilleData = jsonObj.forecast.txt_forecast.forecastday[0].icon_url;
 document.getElementById("forecastImg").src=greenvilleData;

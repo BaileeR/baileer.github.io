@@ -15,4 +15,16 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+    
+    /*-----Cities Pages------*/
+    #forecastTable {
+        border-collapse: collapse; 
+        border: 3px solid #272391; 
+        margin-left: 44%;
+        margin-right: 44%;
+    }
+    
+    #forecastTable thead,tbody {
+        padding: 10px
+    }
 }

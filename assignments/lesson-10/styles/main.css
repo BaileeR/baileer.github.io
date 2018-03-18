@@ -29,6 +29,14 @@ header h1 {
     display: flex;
 }
 
+#weatheredName img {
+    max-width: 250px;
+}
+
+#weatheredLogo img {
+    max-height: 106px;
+}
+
 /* the navigation bar */
 
 nav button {
@@ -96,6 +104,10 @@ nav button {
     }
 }
 
+#longSun img {
+    width: 100%; 
+}
+
 /* city name heading */
 
 main h2 {
@@ -105,13 +117,16 @@ main h2 {
 
 /* the weather summary */
 
-/* Come Back to This one */
+#weatherSummaryText {
+    margin-left: 10%;
+}
 
 .stat_boxes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 3em;
+    margin-left: 10%;
 }
 
 .stat_boxes div {
@@ -131,6 +146,8 @@ main h2 {
 
 article p {
     font-family: sans-serif;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .article_box {

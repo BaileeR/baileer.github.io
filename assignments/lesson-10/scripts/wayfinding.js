@@ -4,12 +4,12 @@ urlArray = urlString.split('/');
 pageHREF = urlArray[urlArray.length - 1];
 
 if (pageHREF !== "") {
-    menu = document.querySelectorAll('nav#mainmenu div a');
+    menu = document.querySelectorAll("nav#mainmenu div a");
     for (i = 0; i < menu.length; i++) {
         currentURL = (menu[i].getAttribute('href'));
-        menu[i].parentNode.className = '';
+        menu[i].parentNode.className = "";
         if (currentURL === pageHREF) {
-            menu[i].parentNode.className = 'active';
+            menu[i].parentNode.className = "active";
         }
     }
 }
