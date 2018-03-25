@@ -1,13 +1,26 @@
 $(function () {
+    
+    $('#alcoveLogo').css('opacity', 0.5);
+    
+    $('.servicesBtn').css('color','#FF');
+    
+    $('button').css('border', '1px solid red');
+    
+    $('h2').css('border','1px solid red');
+    
+    $('input[name="nameVal"]').css('border','1px solid red');
+    
+    $('input[name!="phoneNum"]').css('border','1px solid red');
+    
+    $(".navigation > li:eq(2)").parent().css('opacity','0.3');
+    
+    $('.servicesBtn').closest('div').css('background-color','rgba(255,0,0,0.2)');
+    
     /* var toggleStyle = function() {
-        
         var inputFields = $('input[type="text"]');
-        
         if( inputFields.css('background-color') === 'rgb(255, 0, 0)' ) {
-            // Set background color to white
             inputFields.css('background-color', 'rgb(255, 255, 255)');
         } else {
-            // Set background color to red
             inputFields.css('background-color', 'rgb(255, 0, 0)');
         }
     }  
@@ -24,3 +37,4 @@ $(function () {
     }
     $('#ReqAQuoteBtn').click(fillEmpty);
 })
+
