@@ -1,0 +1,14 @@
+@media only screen and (min-width: 64em) {
+   
+/* EVENTS PAGE */
+    
+    .priceGrid {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-column-gap: 5%;
+    }
+    
+    #mapImage {
+        width: 50%;
+    }
+}

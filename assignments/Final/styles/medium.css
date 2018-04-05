@@ -1,0 +1,32 @@
+@media only screen and (min-width: 37.5em) {
+
+    /* main menu - menu button doesn't need to be seen */
+    
+    .hamburger {
+        display: none; 
+    }
+    
+    .navigation:not(.responsive) {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-around;
+        font-size: 1.5em
+    }
+
+
+    
+    /* EVENTS PAGE */
+    
+    .priceGrid {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-column-gap: 5%;
+    }
+    
+    #mapImage {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+}

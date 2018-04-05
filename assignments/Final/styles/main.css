@@ -1,0 +1,229 @@
+/* REGULAR TEMPLATE */
+* {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    background-color: #a7c277;
+}
+
+div.background {
+    background-color: rgba(217, 245, 165, .4);
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 0px;
+    margin-bottom: -31px; 
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    color: #032D5f;
+    font-size: 1.2em
+}
+
+header img {
+    height: 75px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+
+/* main menu */
+.navigation:not(.responsive) {
+    display: none;
+}
+
+.hamburger {
+    width: 100%; 
+    height: 30px; 
+    color: #032D5f; 
+    border: hidden; 
+    background-color: rgba(217,245, 165, .3); 
+    font-size: 1.5em; 
+}
+
+nav ul {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin-left: -9%;
+    list-style-type: none; 
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: #032d5f; 
+}
+
+nav ul li a:hover {
+    color: white; 
+}
+
+.navigation.responsive {
+    display: block;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin-left: -9%;
+    list-style-type: none;
+    font-size: 1.5em;
+}
+
+.navigation li.active a{
+    color: white; 
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    color: #032D5f;
+    font-size: 1.1em;
+}
+
+.footerLink a {
+    color: #032D5f;
+    text-decoration: none;
+}
+
+.footerLink a:hover {
+    color: white;
+}
+
+
+
+/* HOME PAGE */ 
+
+
+
+
+
+
+
+/* TOURS PAGE */ 
+
+
+
+
+/* EVENTS PAGE */ 
+
+.bold {
+    font-weight: 999; 
+}
+
+#differentColor {
+    color: #032d4f; 
+}
+
+.headerEvent {
+    text-align: center;
+}
+
+.eventInfoBox {
+    width: 80%; 
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+.priceGrid {
+    display: grid; 
+    grid-template-columns: 1fr;
+}
+
+.priceImage {
+    width: 100%
+}
+
+#mapImage {
+    width: 100%
+}
+
+/* SALES PAGE */ 
+
+#salesHeader {
+    color: #032d5f;
+    text-align: center;
+}
+
+.bigBikeText {
+    font-size: 20px; 
+}
+
+.ui-accordion {
+    background-color: rgba(217, 245, 165, .4);
+    margin-bottom: 30px;
+}
+
+.ui-accordion-header-active {
+    background-color: #032D5f;
+    border: 1px solid white; 
+    text-align: center;
+}
+
+.ui-accordion-header-collapsed {
+    background-color: rgba(217, 245, 165, .4);
+    border: 1px solid white; 
+    color: #032d5f;
+    text-align: center; 
+}
+
+.ui-accordion-content {
+    background-color: rgba(217, 245, 165, .4);
+    border: none; 
+}
+
+.bikePics {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+/* SERVICES PAGE */ 
+
+.bikeServiceTable, th, td {
+    border-collapse: collapse; 
+    border: 1px solid #032d5f;
+    padding: 8px; 
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 20px; 
+    margin-top: 20px;
+    text-align: center;
+}
+
+.bikeDataHeaderBig {
+    font-size: 22px;
+    color: #032d5f; 
+}
+
+.bikeDataHeaderSmaller {
+    font-size: 18px;
+    color: #032d5f; 
+}
+
+.dataEvenOdd tr:nth-child(even){
+    background-color: rgba(217, 245, 165, .4);
+}
+
+.dataEvenOdd tr:nth-child(odd){
+    background-color: #a7c277;
+}
+
+/* CONTACT PAGE */ 
+
+
+
+
+/* VIDEO PAGE */ 
+
+
+
+
+

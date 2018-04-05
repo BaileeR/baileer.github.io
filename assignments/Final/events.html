@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mountain Spoke | Events</title>
+    <meta name="author" content="Bailee Robertson">
+    <meta name="description" content="My CIT230 Final Page">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="background">
+        <header>
+            <h1>The Mountain Spoke</h1>
+            <img src="images/theSiteLogo.png" width="200" alt="logo">
+        </header>
+
+        <nav>
+            <button class="hamburger" onclick="toggleHam()">Menu</button>
+            <ul class="navigation">
+                <li class><a href="home.html">Home</a></li>
+                <li class><a href="tours.html">Tours</a></li>
+                <li class><a href="#">Events</a></li>
+                <li class><a href="sales.html">Sales</a></li>
+                <li class><a href="events.html">Services</a></li>
+            </ul>
+        </nav>
+
+        <main>
+           <img src="images/bikingEventMapFixed.jpg" alt="Map of Biking Route" width="498" id="mapImage">
+            <h2 class="headerEvent">This Year's Event: <span id="differentColor">Cycle the Continental Divide</span></h2>
+
+            <div class="eventInfoBox">
+                <p>The event will be held <span class="bold">May 4th - May 15th</span>. Bikers will start in <span class="bold">Rooseville, Montana</span> and will end in <span class="bold">Polaris, Montana</span>. The trail is <span class="bold">540 miles long and </span>Bikers will travel <span class="bold">50 miles a day</span>. Food and water will be provided. Riders are welcome to bring their own camping gear or use the provided gear. </p>
+                
+                <h3 class="headerEvent">Biker Requirments:</h3>
+                <ul class="eventInfoBox">
+                    <li>18 or older</li>
+                    <li>A bicycle in good condition</li>
+                    <li>A backpack or other storage container</li>
+                    <li>Ability to bike 50 or more miles a day</li>
+                    <li>Any personal medication</li>
+                </ul>
+                
+                <h3 class="headerEvent">Prices:</h3>
+                <div class="priceGrid">
+                    <div>
+                    <img src="images/bikingEventOneFixed.jpg" alt="No Perks, Just the Ride" width="200" class="priceImage">
+                    <p>No Perks, Just the Ride - $50</p>
+                    </div>
+                    <div>
+                    <img src="images/bikingEventTwoFixed.jpg" alt="Tour Book, Maps, and a Photobook" width="200" class="priceImage">
+                    <p>Tour Book, Maps, and a Photobook - $70</p>
+                    </div>
+                    <div>
+                    <img src="images/bikingEventThreeFixed.jpg" alt="Late Fee" width="200" class="priceImage">
+                    <p>Late Fee - Register 2 weeks before the event - 90$</p>
+                    </div>
+                </div>
+                <h2 class="headerEvent">Register Now!</h2>
+                <form action="thanks.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div>
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" name="fullName" id="fullName" pattern="[A-Za-z\s]+[A-Za-z]{5,}" required autofocus>
+                </div>
+                <div>    
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="example@email.com" required>
+                </div>
+                <div>
+                    <label for="telephone">Phone Number:</label>
+                    <input type="tel" name="telephone" id="telephone" required>
+                </div>
+                <div>
+                    <label for="zipCode">Zip Code:</label>
+                    <input type="number" name="zipCode" id="zipCode" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
+                <div>
+                    <label for="stormDate">Storm Date:</label>
+                    <input type="date" name="stormDate" id="stormDate">
+                </div>
+                <div>
+                    <label for="stormType">Storm Type:</label>
+                    <input type="list" name="stormType" id="stormType" value list="storms">
+                    <datalist id="storms">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </div>
+                <div>
+                    <label for="stormSeverity">Storm Severity:</label>
+                    <input type="range" name="stormSeverity" id="stormSeverity" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="severityValue">5</span>
+                </div>
+                <div>
+                    <label for="stormRegion">Storm Region:</label>
+                    <input name="stormRegion" id="stormRegion" value list="regions">
+                    <datalist id="regions">
+                        <option value="Select" selected disabled>Select The Region</option>
+                        <option value="Franklin">Franklin</option>
+                        <option value="Greenville">Greenville</option>
+                        <option value="Springfield">Springfield</option>
+                    </datalist>
+                    <div>
+                        <label for="dangerLevel">Are you In Danger?</label><br>
+                        <input type="radio" name="dangerLevel" id="dangerLevel" value="yes" checked> Yes <br>
+                        <input type="radio" name="dangerLevel" id="dangerLevel" value="no"> No <br>
+                        <input type="radio" name="dangerLevel" id="dangerLevel" value="maybe"> Maybe
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Other Relevant Information</legend>
+                <textarea name="moreInfo" rows="10" cols="30"></textarea>
+            </fieldset>
+            <input type="submit" name="submit" id="submitButton">
+        </form>
+            </div>
+
+        </main>
+
+        <footer>
+            <aside>
+                <span class="footerLink"><a href="contactUs.html">Contact Us</a></span>
+                <span> |</span>
+                <span class="footerLink"><a href="video.html">Video</a></span>
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span></p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="scripts/toggleHam.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/wayfinding.js"></script>
+</body>
+</html>
