@@ -107,8 +107,48 @@ footer {
 
 /* TOURS PAGE */ 
 
+#mainToursHeader {
+    text-align: center;
+}
 
+.dailyTours {
+    display: grid;
+    grid-template-columns: 1fr
+}
 
+.tourOne {
+    border: 1px solid white; 
+    text-align: center; 
+    margin: 1em; 
+    padding: 10px;
+    background-color: #a7c277;
+}
+
+.tourTwo {
+    border: 1px solid white; 
+    text-align: center; 
+    margin: 1em; 
+    padding: 10px;
+    background-color: #a7c277; 
+}
+
+.tourOne img {
+    width: 100%; 
+}
+
+.tourTwo img {
+    width: 100%;
+}
+
+.noBulletPoints {
+    list-style-type: none; 
+    margin-left: -40px
+}
+
+.noUnderline {
+    text-decoration: none; 
+    color: white; 
+}
 
 /* EVENTS PAGE */ 
 
@@ -258,5 +298,11 @@ fieldset {
 
 
 
+
+/* THANKS PAGE */ 
+
+#thanksCenter {
+    text-align: center;
+}
 
 
