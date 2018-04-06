@@ -22,7 +22,7 @@ header {
     display: flex;
     justify-content: space-around;
     color: #032D5f;
-    font-size: 1.2em
+    font-size: 1.1em
 }
 
 header img {
@@ -30,7 +30,6 @@ header img {
     width: 100px;
     margin-top: 10px;
 }
-
 
 /* main menu */
 .navigation:not(.responsive) {
@@ -128,7 +127,7 @@ footer {
 .eventInfoBox {
     width: 80%; 
     margin-left: 10%;
-    margin-right: 10%
+    margin-right: 10%;
 }
 
 .priceGrid {
@@ -137,11 +136,45 @@ footer {
 }
 
 .priceImage {
-    width: 100%
+    width: 100%;
 }
 
 #mapImage {
-    width: 100%
+    width: 100%;
+}
+
+fieldset {
+    background-color: #a7c277;
+}
+
+legend {
+    background-color: #a7c277; 
+    border: 1px solid white; 
+    padding: 3px; 
+    color: #032d4f; 
+    font-weight: 999; 
+}
+
+fieldset {
+    border: 1px solid white;
+    padding: 10px; 
+    margin-top: 10px; 
+}
+
+.stretch {
+    width: 100%; 
+    background-color:  rgba(217,245, 165, .3);
+    border: 1px solid white;
+    margin-top: 5px;
+    margin-bottom: 5px; 
+}
+
+.formButton {
+    width: 25%;
+    background-color: #a7c277; 
+    border: 1px solid white; 
+    margin-top: 5px; 
+    margin-left: 1px; 
 }
 
 /* SALES PAGE */ 
