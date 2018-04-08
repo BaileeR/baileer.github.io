@@ -33,8 +33,39 @@
         </nav>
 
         <main>
+        
+        <h1 class="headerMiddle">Our Contact Information</h1>
+        <h2 class="headerMiddle">Location: </h2>
+        <h3 id="addressBox" class="headerMiddle">3950 Valley Commons Drive Bozeman, MT</h3>
+        
+        <iframe id="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9314410354723!2d-111.09290618476645!3d45.67227662755652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1523037205038" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-
+       <h2 class="headerMiddle">Phone Number: </h2>
+       <h3 class="headerMiddle">302 - 867 - 5309</h3>
+       <h2 class="headerMiddle">Store Hours:</h2>
+       <h4 class="headerMiddle">9am - 9pm</h4>
+       <h4 class="headerMiddle" id="squish">Monday - Saturday</h4>
+       
+       <h2 class="headerMiddle">Have any questions or comments for us? Leave a message below and we'll get back to you. </h2>
+       
+       <form action="thanks.html">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <div>
+                            <label for="fullName">Full Name:</label>
+                            <input class="stretch" type="text" name="fullName" id="fullName" pattern="[A-Za-z\s]+[A-Za-z]{5,}" required>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input class="stretch" type="email" name="email" id="email" placeholder="example@email.com" required>
+                        </div>
+                       </fieldset>
+                    <fieldset>
+                        <legend>Questions or Comments</legend>
+                        <textarea class="stretch" name="moreInfo" rows="10" cols="30"></textarea>
+                    </fieldset>
+                    <input class="formButton" type="submit" name="submit" id="submitButton">
+                </form>
         </main>
 
         <footer>
@@ -42,6 +73,8 @@
                <span class="footerLink"><a href="#">Contact Us</a></span>
                <span> |</span>
                <span class="footerLink"><a href="video.html">Video</a></span>
+               <span> |</span>
+                <span class="footerLink"><a href="resources.html">Resources</a></span>
            </aside>
             <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span></p>
         </footer>

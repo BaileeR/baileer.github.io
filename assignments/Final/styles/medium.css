@@ -5,17 +5,40 @@
         display: none;
     }
 
+    /*
+    nav ul {
+        flex-direction: row; 
+    }
+*/
     .navigation:not(.responsive) {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        font-size: 1.5em
+        font-size: 1.5em;
+    }
+
+    .navigation.responsive {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    /* HOME PAGE */
+    .mainArticle {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .allHomeServices {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     /* TOURS PAGE */
     .dailyTours {
         display: grid;
-        grid-template-columns: 1fr 1fr
+        grid-template-columns: 1fr 1fr;
     }
 
     /* EVENTS PAGE */

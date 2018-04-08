@@ -22,7 +22,7 @@ header {
     display: flex;
     justify-content: space-around;
     color: #032D5f;
-    font-size: 1.1em
+    font-size: 1.1em;
 }
 
 header img {
@@ -59,8 +59,13 @@ nav ul li a {
     color: #032d5f; 
 }
 
+
 nav ul li a:hover {
     color: white; 
+}
+
+.active {
+    color: white;
 }
 
 .navigation.responsive {
@@ -96,14 +101,45 @@ footer {
 }
 
 
-
 /* HOME PAGE */ 
 
+.mainArticle {
+    display: grid; 
+    grid-row-gap: 1em; 
+    grid-template-columns: 100%;
+    margin-right: 5%; 
+    margin-left: 5%; 
+    margin-top: 1em; 
+    margin-bottom: 1em; 
+}
 
+.homeMainImage {
+    width: 100%; 
+}
 
+.homeMainArticle {
+    text-align: center; 
+    border: 1px solid white;
+    background-color: #a7c277;
+    padding: 1em; 
+}
 
+.allHomeServices {
+    display: grid; 
+    grid-template-columns: 1fr; 
+}
 
+.homeServices {
+    text-align: center; 
+    border: 1px solid white;
+    margin: 2em;
+    padding: 1em; 
+    background-color: #a7c277;
+}
 
+.homeServices img {
+    width: 100%;
+}
 
 /* TOURS PAGE */ 
 
@@ -113,7 +149,7 @@ footer {
 
 .dailyTours {
     display: grid;
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
 }
 
 .tourOne {
@@ -153,7 +189,7 @@ footer {
 /* EVENTS PAGE */ 
 
 .bold {
-    font-weight: 999; 
+    font-weight: 100; 
 }
 
 #differentColor {
@@ -192,7 +228,7 @@ legend {
     border: 1px solid white; 
     padding: 3px; 
     color: #032d4f; 
-    font-weight: 999; 
+    font-weight: 100; 
 }
 
 fieldset {
@@ -290,9 +326,23 @@ fieldset {
 }
 
 /* CONTACT PAGE */ 
+.headerMiddle {
+    text-align: center;
+}
 
+#addressBox {
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+}
 
+#googleMap {
+    width: 100%;
+}
 
+#squish {
+    margin-top: -20px;
+}
 
 /* VIDEO PAGE */ 
 

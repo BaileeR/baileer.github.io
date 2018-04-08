@@ -1,13 +1,30 @@
 @media only screen and (min-width: 64em) {
-   
-/* EVENTS PAGE */
-    
-    .priceGrid {
-        display: grid; 
-        grid-template-columns: 1fr 1fr 1fr; 
-        grid-column-gap: 5%;
+
+    /* HOME PAGE */
+    .mainArticle {
+        display: grid;
+        grid-column-gap: 10%;
+        grid-template-columns: 40% 40%;
+        margin-right: 10%;
+        margin-left: 5%;
     }
     
+    .homeMainImage {
+        margin-left: 20%;
+    }
+
+    .allHomeServices {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* EVENTS PAGE */
+    .priceGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 5%;
+    }
+
     #mapImage {
         width: 50%;
     }

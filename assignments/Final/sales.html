@@ -26,11 +26,11 @@
         <nav>
             <button class="hamburger" onclick="toggleHam()">Menu</button>
             <ul class="navigation">
-                <li class><a href="home.html">Home</a></li>
-                <li class><a href="tours.html">Tours</a></li>
-                <li class><a href="events.html">Events</a></li>
-                <li class><a href="#">Sales</a></li>
-                <li class><a href="services.html">Services</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li class="active"><a href="#">Sales</a></li>
+                <li><a href="services.html">Services</a></li>
             </ul>
         </nav>
 
@@ -40,7 +40,7 @@
             <div id="accordion">
                 <h3><span id="firstBike"></span></h3>
                 <div>
-                    <img src="images/thefirstbike.jpg" alt="Bike-inator 300" width="200" class="bikePics">
+                    <img src="images/newBikeImageFixed.jpg" alt="Bike-inator 300" width="200" class="bikePics">
                     <h2 id=firstBikeType></h2>
                     <p class="bigBikeText">Features:</p>
                     <ul>
@@ -58,7 +58,7 @@
                 </div>
                 <h3 id="secondBike"></h3>
                 <div>
-                    <img src="images/middleBikeFixed.jpg" alt="The Cool Kidz Bike" width="200" class="bikePics">
+                    <img src="images/newBikeImageThreeFixed.jpg" alt="The Cool Kidz Bike" width="200" class="bikePics">
                     <h2 id=secondBikeType></h2> <p class="bigBikeText">Features:</p>   
                     <ul>
                         <li id=secondBikeAttributeOne></li>
@@ -75,7 +75,7 @@
                 </div>
                 <h3 id="thirdBike"></h3>
                 <div>
-                    <img src="images/goldBikefixed.jpg" alt="Bike For Rich People" width="200" class="bikePics">
+                    <img src="images/newBikeImageTwoFixed.jpg" alt="Bike For Rich People" width="200" class="bikePics">
                     <h2 id=thirdBikeType></h2>
                     <p class="bigBikeText">Features:</p>
                     <ul>
@@ -100,16 +100,18 @@
                 <span class="footerLink"><a href="contactUs.html">Contact Us</a></span>
                 <span> |</span>
                 <span class="footerLink"><a href="video.html">Video</a></span>
+                <span> |</span>
+                <span class="footerLink"><a href="resources.html">Resources</a></span>
             </aside>
-            <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span></p>
+            <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span>
+            </p>
         </footer>
     </div>
    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="scripts/toggleHam.js"></script>
     <script src="scripts/currentdate.js"></script>
-    <script src="scripts/wayfinding.js"></script>
-    <script src="scripts/bikestats.js"></script>
+    <script src="data/bikestats.js"></script>
     <script src="scripts/accordion.js"></script>
 </body>
 </html>
